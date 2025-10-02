@@ -4,4 +4,5 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }, format: { with: /\w/, message: "only allows letters" }
 
   has_many :posts
+  has_many :comments
 end
